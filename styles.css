@@ -1,3 +1,4 @@
+
 /* Reset some default styles */
 * {
     margin: 0;
@@ -5,16 +6,23 @@
     box-sizing: border-box;
 }
 
+.pirata-one-regular {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;   /* Set background to black */
+    color: white;              /* Set text color to white */
     line-height: 1.6;
 }
 
 /* Header Styling */
 header {
-    background: #333;
+    background: #222;  /* A darker shade of black for header */
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -35,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: white;           /* Ensure links are white */
     text-decoration: none;
     font-weight: bold;
 }
@@ -46,11 +54,13 @@ section {
     margin: 2rem 0;
 }
 
+/* About Section */
 #about p {
     max-width: 800px;
     margin: 0 auto;
 }
 
+/* Gallery Section */
 #gallery .image-gallery {
     display: flex;
     justify-content: center;
@@ -70,7 +80,7 @@ audio {
 
 /* Footer Styling */
 footer {
-    background: #333;
+    background: #222;    /* Same dark shade for the footer */
     color: white;
     text-align: center;
     padding: 1rem;
@@ -78,3 +88,4 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
