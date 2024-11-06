@@ -10,6 +10,7 @@
   font-family: "Pirata One", system-ui;
   font-weight: 400;
   font-style: normal;
+
 }
 body {
     font-family: "Pirata One", system-ui;
@@ -20,21 +21,20 @@ body {
     line-height: 1.6;
 }
 
-/* Header Styling */
 header {
-    background: #222;  /* A darker shade of black for header */
-    color: white;
+    background: #333;
     padding: 1rem 0;
     text-align: center;
 }
 
 header h1 {
-    margin-bottom: 0.5rem;
+    font-size: 2rem;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin-top: 1rem;
 }
 
 nav ul li {
@@ -43,44 +43,45 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;           /* Ensure links are white */
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Section Styling */
 section {
     padding: 2rem;
     margin: 2rem 0;
 }
 
-/* About Section */
-#about p {
-    max-width: 800px;
-    margin: 0 auto;
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-/* Gallery Section */
-#gallery .image-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+/* Simple fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
+section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Gallery styling */
 #gallery img {
+    width: 100%;
     max-width: 300px;
+    margin: 10px;
     border-radius: 10px;
 }
 
-/* Audio Player */
-audio {
-    display: block;
-    margin: 1rem auto;
-}
-
-/* Footer Styling */
 footer {
-    background: #222;    /* Same dark shade for the footer */
+    background: #333;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -88,4 +89,3 @@ footer {
     width: 100%;
     bottom: 0;
 }
-
